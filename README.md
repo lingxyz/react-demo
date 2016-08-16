@@ -1,4 +1,4 @@
-#react-webpack-simple-example
+#react-webpack-simple-demo
 ---
 please run 
 ```
