@@ -21,8 +21,8 @@
     "react-router": "^2.6.1",
     "react-router-loader": "^0.5.4",
     "style-loader": "^0.12.3",
-    "webpack": "^1.11.0",
-    "webpack-dev-server": "^1.10.1"
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
   },
   "dependencies": {
     "jsx-loader": "^0.13.2"
