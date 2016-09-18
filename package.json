@@ -5,7 +5,7 @@
   "main": "app/main.js",
   "scripts": {
     "dev": "webpack-dev-server --hot --devtool eval --progress --colors --content-base app --history-api-fallback",
-    "deploy": "NODE_ENV=production webpack -p --progress --config webpack.production.config.js"
+    "deploy": "webpack -p --progress --config webpack.production.config.js"
   },
   "author": "Chester",
   "license": "ISC",
