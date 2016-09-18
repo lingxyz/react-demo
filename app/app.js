@@ -7,7 +7,7 @@
  *
  */
 import React from 'react'
-import { Router, Route, Link, hashHistory } from 'react-router'
+import { Router, Route, Link, browserHistory } from 'react-router'
 import ReactRouterLoader from 'react-router-loader'
 
 const App = React.createClass({
@@ -27,7 +27,7 @@ const App = React.createClass({
 })
 
 React.render((
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="profile" component={require('react-router!./page/profile')} />
         <Route path="message(/:id)" component={require('react-router!./Message')} />
