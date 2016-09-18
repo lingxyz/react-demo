@@ -42,6 +42,7 @@ var config = {
   }
 };
 
+// 忽略对已知文件的解析
 deps.forEach(function (dep) {
   var depPath = path.resolve(node_modules_dir, dep);
   config.resolve.alias[dep.split(path.sep)[0]] = depPath;

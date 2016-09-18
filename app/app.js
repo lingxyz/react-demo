@@ -30,8 +30,8 @@ React.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="profile" component={require('react-router!./page/profile')} />
-        <Route path="message(/:id)" component={require('react-router!./Message')} />
-        <Route path="box" component={require('react-router!./box')}>
+        <Route path="message(/:id)" component={require('react-router!./page/message')} />
+        <Route path="box" component={require('react-router!./page/box')}>
       </Route>
     </Route>
   </Router>

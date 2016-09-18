@@ -1,12 +1,3 @@
-/**
- * Copyright (c) 2014 Meizu bigertech, All rights reserved.
- * http://www.bigertech.com/
- * @author Chester
- * @date  15/8/25
- * @description
- *
- */
-
 var jason = [
   {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
   {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
