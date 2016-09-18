@@ -11,7 +11,8 @@ var path = require('path');
 var config = {
   entry: path.resolve(__dirname, 'app/app.js'),
    output: {
-    path: path.resolve(__dirname, './dist')
+    path: path.resolve(__dirname, './dist'),
+    filename: "[name].js"
   },
   module: {
     loaders: [{
