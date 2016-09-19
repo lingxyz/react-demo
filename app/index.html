@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html>
+<!-- <html manifest="manifest.php" ng-controller="mainCtrl"> -->
 <head>
-  <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="wap-font-scale" content="no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    
+    <meta name="full-screen" content="true"/>
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="x5-fullscreen" content="true"/>
+    <meta name="360-fullscreen" content="true"/>
 
-  <title>React Test</title>
+    <title ng-bind="init.headinfo.title"></title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <!-- iOS 7 iPad (retina) -->
+    <!-- <link href="./img/icon/icon-152.png" sizes="152x152" rel="apple-touch-icon"> -->
+    <!-- iOS 6 iPad (retina) -->
+    <!-- <link href="./img/icon/icon-144.png" sizes="144x144" rel="apple-touch-icon"> -->
+    <!-- iOS 7 iPhone (retina) -->
+    <!-- <link href="./img/icon/icon-120.png" sizes="120x120" rel="apple-touch-icon"> -->
+    <!-- iOS 6 iPhone (retina) -->
+    <!-- <link href="./img/icon/icon-114.png" sizes="114x114" rel="apple-touch-icon"> -->
+    <!-- iOS 7 iPad -->
+    <!-- <link href="./img/icon/icon-76.png" sizes="76x76" rel="apple-touch-icon"> -->
+    <!-- iOS 6 iPad -->
+    <!-- <link href="./img/icon/icon-72.png" sizes="72x72" rel="apple-touch-icon"> -->
+    <!-- iOS 6 iPhone -->
+    <link  rel="apple-touch-icon" href="./img/favicon.ico" sizes="57x57">
 </head>
 <body>
-  <div id="root"></div>
-  <script src="http://localhost:8080/webpack-dev-server.js"></script>
-  <script src="bundle.js"></script>
+    <div id="root"></div>
+    <script src="./common/lib/zepto/zepto.min.js"></script>
+  	<!-- <script src="http://localhost:8080/webpack-dev-server.js"></script> -->
+  	<script src="bundle.js"></script>
 </body>
 </html>
