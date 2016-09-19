@@ -24,27 +24,32 @@ export default React.createClass ({
    		}
    	},
 
-   	ifActive(index){
+   	/* 给当前 tab 加 class 'active' */
+   	isCurrent(index) {
+   		// 取当前 pathname 的索引 currentIndex
    		let pathnameArr = [];
    		this.state.footers.map((item, index) => {
 			pathnameArr.push(item.pathname)
 		})
    		let currentIndex = pathnameArr.indexOf(location.pathname);
+
+   		// 若当前索引值 currentIndex 等于 循环索引值 index，
+   		// 返回 class 'active'
         return index === currentIndex ? 'active' : '';
     },
 
   	render() {
 	    return <footer
 	    	>
-				<ul>
-					{ this.state.footers.map((item, index) => {
-						return <li
-								className={ this.ifActive(index) }
-							>
-								<Link to={item.pathname}>{item.text}</Link>
-							</li>
-					}) }
-		        </ul>
-			</footer>
+			<ul>
+				{ this.state.footers.map((item, index) => {
+					return <li
+							className={ this.isCurrent(index) }
+						>
+							<Link to={item.pathname}>{item.text}</Link>
+						</li>
+				}) }
+	        </ul>
+		</footer>
   	}
 })
