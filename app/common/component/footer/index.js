@@ -24,7 +24,6 @@ export default React.createClass ({
 	    	>
 			<ul>
 				{ footers.map((item, index) => {
-					console.log(footers)
 					return <li
 							className={ this.isCurrent(index) }
 						>

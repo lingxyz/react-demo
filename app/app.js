@@ -18,4 +18,4 @@ React.render((
     <Route path="order" component={require('react-router!./page/order/index')} />
     <Route path="user" component={require('react-router!./page/user/index')} />
   </Router>
-), document.getElementById('root'))
+), document.querySelector('.page'))
