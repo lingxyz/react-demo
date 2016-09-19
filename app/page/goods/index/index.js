@@ -1,13 +1,13 @@
 import React from 'react'
 import './style.sass'
 
-import Inbox from './component/inbox'
+import Footer from '../../../common/component/footer'
 
 export default React.createClass ({
   render() {
     return <div>
-        	<h2>page profile</h2>
-        	<Inbox />
+        	<h2>校园购</h2>
+        	<Footer />
       	</div>
   }
 })
