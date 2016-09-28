@@ -1,10 +1,9 @@
 /**
  * Copyright (c) 2014 Meizu bigertech, All rights reserved.
- * http://www.bigertech.com/
- * @author Chester
- * @date  15/8/25
+ * http://wap.beautysite.cn/
+ * @author Zhangling
+ * @date  16/8/25
  * @description
- *
  */
 
 var path = require('path');
