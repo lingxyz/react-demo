@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route, Link, browserHistory } from 'react-router';
 import ReactRouterLoader from 'react-router-loader';
-import fetch from 'isomorphic-fetch';
+import List from '../dist/list';
 
 // 无状态（stateless）组件，一个简单的容器，react-router 会根据 route
 // 规则匹配到的组件作为 `props.children` 传入
@@ -12,34 +12,6 @@ var Container = function Container(props) {
     props.children
   );
 };
-var List = React.createClass({
-    getInitialState: function () {
-    return {
-      opacity: 1111
-    };
-  },
-    componentDidMount: function(){
-        fetch('http://www.baidu.com').then(function(response) {
-          return response.json();
-        }).then(function(data) {
-          console.log(data);
-        }).catch(function(e) {
-          console.log("Oops, error");
-        });
-    },
-
-  render: function render() {
-    return React.createElement(
-      "div",
-      null,
-      React.createElement(
-        "h2",
-        null,
-        this.state.opacity
-      )
-    );
-  }
-});
 var Detail = React.createClass({
   render: function render() {
     return React.createElement(
